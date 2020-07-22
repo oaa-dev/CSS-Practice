@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>INPUT FORM</title>
+	<script src="https://kit.fontawesome.com/696aeaaff6.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+
+			input[type=text]{
+				width: 100%;
+				border:1px solid #aaa;
+				border-radius: 0px;
+				margin: 8px 0;
+				outline: none;
+				padding: 8px;
+				box-sizing: border-box;
+				transition: .3s;
+			}
+
+			input[type=text]:focus{
+				border-color: dodgerBlue;
+				box-shadow: 0 0 8px 0 dodgerBlue;
+			}
+
+			.inputWithIcon input[type=text]{
+				padding-left: 40px;
+			}
+
+			.inputWithIcon{
+				position: relative;
+			}
+
+			.inputWithIcon i{
+				position: absolute;
+				left: 7px;
+				top: 7px;
+				padding: 9px 8px;
+				color: #aaa;
+				transition: .3s;
+			}
+
+			.inputWithIcon input[type=text]:focus + i{
+				color: dodgerBlue;
+			}
+	</style>
+</head>
+<body>
+	<div class="inputWithIcon">
+		<input type="text" placeholder="Please input field!">
+		<i class="fas fa-user-tie"></i>
+	</div>
+
+	<div class="inputWithIcon">
+		<input type="text" placeholder="Please input field!">
+		<i class="fas fa-lock"></i>
+	</div>
+</body>
+</html>
